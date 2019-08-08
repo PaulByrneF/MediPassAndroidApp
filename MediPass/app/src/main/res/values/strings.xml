@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MediPass</string>
+    <string name="app_slogan">Your Secure E-Medical Passport</string>
+    <string name="host_url">https://medipass-server.herokuapp.com</string>
+    <string name="register_uri">/api/register</string>
+    <string name="login_uri">https://medipass-server.herokuapp.com/api/login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

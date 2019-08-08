@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentBasicInfo">
+
+    <!-- TODO: Update blank fragment layout -->
+    
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/smokerLL"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/bTypeTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Smoker" />
+
+            <TextView
+            android:id="@+id/smokerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#8EB2D1"
+            android:gravity="center"
+            android:elevation="8dp"
+            android:padding="10dp"
+            android:text="Yes"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bloodTypeLL"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/smokerLL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Blood Type" />
+
+            <TextView
+                android:id="@+id/bTypeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#8EB2D1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:elevation="8dp"
+                android:text="Yes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drinkerLL"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/smokerLL"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Drinker" />
+
+            <TextView
+                android:id="@+id/drinkerTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#8EB2D1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:elevation="8dp"
+                android:text="Yes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/heightLL"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="18sp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smokerLL">
+
+            <TextView
+                android:id="@+id/weightTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Height" />
+
+            <TextView
+                android:id="@+id/heightTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#8EB2D1"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Yes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sexLL"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/heightLL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bloodTypeLL">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sex" />
+
+            <TextView
+                android:id="@+id/sexTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#8EB2D1"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Yes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weightLL"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/heightLL"
+            app:layout_constraintTop_toBottomOf="@+id/drinkerLL">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Weight" />
+
+            <TextView
+                android:id="@+id/weightTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8EB2D1"
+                android:layout_marginTop="8dp"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Yes"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phHomeLL"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/sexLL"
+            app:layout_constraintTop_toBottomOf="@+id/sexLL">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Phone Home" />
+
+            <TextView
+                android:id="@+id/phHomeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:elevation="8dp"
+                android:gravity="left"
+                android:padding="6dp"
+                android:text="Yes"
+                android:drawableLeft="@drawable/ic_phone_grey_24dp"
+                android:drawablePadding="8dp"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phMobileLL"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/sexLL"
+            app:layout_constraintTop_toBottomOf="@+id/phHomeLL">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Phone Mobile" />
+
+            <TextView
+                android:id="@+id/phMobTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:gravity="left"
+                android:padding="6dp"
+                android:text="Yes"
+                android:drawableLeft="@drawable/ic_phone_grey_24dp"
+                android:drawablePadding="8dp"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emailLL"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/dobLL"
+            app:layout_constraintStart_toStartOf="@+id/sexLL"
+            app:layout_constraintTop_toBottomOf="@+id/phMobileLL">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email_grey_24dp"
+                android:drawablePadding="8dp"
+                android:elevation="8dp"
+                android:gravity="left"
+                android:padding="6dp"
+                android:text="paulbyrnew@gmail.com"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dobLL"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/sexLL"
+            app:layout_constraintTop_toBottomOf="@+id/phMobileLL">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Date of Birth" />
+
+            <TextView
+                android:id="@+id/dobTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:gravity="left"
+                android:padding="6dp"
+                android:drawableLeft="@drawable/ic_date_range_grey_24dp"
+                android:drawablePadding="8dp"
+                android:text="paulbyrnew@gmail.com"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>

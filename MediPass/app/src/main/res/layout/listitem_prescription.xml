@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="120dp"
+    android:padding="10dp"
+    android:id="@+id/parent_layout"
+    android:background="@drawable/listitem_bg"
+    android:layout_margin="10dp"
+    android:elevation="6dp"
+    >
+
+    <TextView
+        android:id="@+id/drugNameTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Drug Name: "
+        android:textColor="@color/colorGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drugNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorGreyDark"
+        app:layout_constraintStart_toEndOf="@+id/drugNameTitleTV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/expiryDateTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/colorGrey"
+        android:text="Expires At:"
+        app:layout_constraintEnd_toStartOf="@+id/expiryDateTV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expiryDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/colorGreyDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drugTypeTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Type: "
+        android:textColor="@color/colorGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drugNameTV" />
+
+    <TextView
+        android:id="@+id/drugTypeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:textColor="@color/colorGreyDark"
+        app:layout_constraintStart_toEndOf="@+id/drugTypeTitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/drugNameTV" />
+
+    <TextView
+        android:id="@+id/drugQuantTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorGrey"
+        android:text="Quantity: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drugTypeTV" />
+
+    <TextView
+        android:id="@+id/drugQuantTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorGreyDark"
+        app:layout_constraintStart_toEndOf="@+id/drugQuantTitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/drugTypeTV" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

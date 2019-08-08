@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:background="@drawable/emr_container">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pidTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16sp"
+            android:layout_marginTop="16sp"
+            android:text="ID: 232"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:text="Paul Byrne"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            app:cardBackgroundColor="@color/colorPrimaryDark2"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTV">
+
+            <TextView
+                android:id="@+id/doctorVisitTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Doctor Visits"
+                android:textColor="@color/colorGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cCountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <ProgressBar
+                android:id="@+id/cCountLoaderPB"
+                android:layout_width="32sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimaryDark2"
+            app:cardCornerRadius="12dp"
+            android:layout_marginStart="8dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toStartOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardView">
+
+            <TextView
+                android:id="@+id/doctorsTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Doctors"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dCountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <ProgressBar
+                android:id="@+id/dCountLoaderPB"
+                android:layout_width="32sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark2"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardView">
+
+            <TextView
+                android:id="@+id/allergiesTitleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Emergencies"
+                android:textColor="@color/colorGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/allergiesStatTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="15dp"
+                android:text="273"
+                android:visibility="gone"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <ProgressBar
+                android:layout_width="32sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"/>
+        </android.support.v7.widget.CardView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-50dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="30dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorHeight="3dp"
+            app:tabIndicatorColor="@color/colorPrimaryDark2"
+            app:tabSelectedTextColor="@color/colorPrimaryDark2"
+            app:tabTextColor="@color/colorPrimaryLight2">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/basicInfoTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basic Info"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/myContactsTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Contacts"/>
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="-30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tablayout_id">
+
+
+        </android.support.v4.view.ViewPager>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

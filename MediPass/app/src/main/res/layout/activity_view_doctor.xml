@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".ViewDoctor">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/circle_bg"
+        android:elevation="40sp"
+        android:src="@drawable/profile_doctor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+    android:id="@+id/nameTV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="18dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginBottom="8dp"
+        android:elevation="6dp"
+    android:text="Dr. Markus DeBrun"
+    android:textColor="@color/colorAccent"
+    android:textSize="24sp"
+    app:layout_constraintStart_toEndOf="@+id/profile_image"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.409" />
+
+    <TextView
+    android:id="@+id/fOSTV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="18dp"
+    android:layout_marginTop="8dp"
+        android:elevation="6dp"
+    android:text="General Practitoner"
+    android:textColor="@color/colorAccent"
+    android:textSize="20dp"
+    app:layout_constraintStart_toEndOf="@+id/profile_image"
+    app:layout_constraintTop_toBottomOf="@+id/nameTV" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="220dp"
+        android:paddingBottom="300dp"
+        app:tabIndicatorHeight="3dp"
+        android:background="@drawable/top_bg"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/colorPrimaryLight2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabDoctorInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Doctor Info"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabPracticeInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practice Info"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <Button
+        android:id="@+id/addDocBtn"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16sp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/filledbtn"
+        android:text="Add Doctor"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpager_id" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/ic_arrow_back_back_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addDocBtn"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpager_id" />
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/cardView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginHorizontal="6dp"-->
+        <!--android:layout_marginTop="220dp"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--app:cardCornerRadius="50dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"/>-->
+
+
+
+    <!--<LinearLayout-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="61dp"-->
+        <!--android:background="@drawable/greybordertop_bg"-->
+        <!--android:paddingLeft="44dp"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:elevation="2sp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/cardView">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_margin="6dp"-->
+            <!--android:src="@drawable/ic_phone_grey_24dp" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textSize="16sp"-->
+            <!--android:padding="15dp"-->
+            <!--android:textColor="@color/colorGreyDark"-->
+            <!--android:text="01-1234342414"-->
+            <!--android:gravity="center_vertical"/>-->
+    <!--</LinearLayout>-->
+
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/fOSTV"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="General Practitioner"-->
+    <!--android:textColor="@color/colorGreyLight"-->
+    <!--android:textSize="24dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/nameTV" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/regNoTV"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginHorizontal="16sp"-->
+    <!--android:layout_marginTop="24dp"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:elevation="10dp"-->
+    <!--android:text="Reg No: 123456789"-->
+    <!--android:textColor="@color/colorGreyDark"-->
+    <!--android:textSize="18sp"-->
+    <!--android:padding="6dp"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/fOSTV" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/phNoTV"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginHorizontal="16sp"-->
+    <!--android:layout_marginTop="24dp"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:elevation="10dp"-->
+    <!--android:padding="6dp"-->
+    <!--android:text="Reg No: 123456789"-->
+    <!--android:textColor="@color/colorGreyDark"-->
+    <!--android:textSize="18sp"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/regNoTV" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginHorizontal="16sp"-->
+    <!--android:layout_marginTop="24dp"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:elevation="10dp"-->
+    <!--android:padding="6dp"-->
+    <!--android:text="Email: markus123@gmail.com"-->
+    <!--android:textColor="@color/colorGreyDark"-->
+    <!--android:textSize="18sp"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/phNoTV" />-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/addBtn"-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_gravity="end|bottom"-->
+    <!--android:layout_margin="32dp"-->
+    <!--app:fabSize="auto"-->
+    <!--android:backgroundTint="@color/colorPrimaryDark"-->
+    <!--app:rippleColor="@color/colorPrimary"-->
+    <!--android:clickable="true"-->
+    <!--android:src="@drawable/ic_add_white_24dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent" />-->
+
+</android.support.constraint.ConstraintLayout>
